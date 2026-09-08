@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace SimpleCalc
 {
-    public partial class SimpleCalc : Form
+    public partial class SimpleCalc2 : Form
     {
-        public SimpleCalc()
+        public SimpleCalc2()
         {
             InitializeComponent();
 

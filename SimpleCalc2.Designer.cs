@@ -1,6 +1,6 @@
 ﻿namespace SimpleCalc
 {
-    partial class SimpleCalc
+    partial class SimpleCalc2
     {
         /// <summary>
         ///  Required designer variable.
