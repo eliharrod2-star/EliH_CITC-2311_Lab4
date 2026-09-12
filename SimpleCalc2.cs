@@ -48,7 +48,7 @@ namespace SimpleCalc
 
                 txtOperand1.Focus();
             }
-            catch(FormatException)
+            catch (FormatException)
             {
                 MessageBox.Show(
                     "Please enter numeric values for the operands.",
@@ -65,14 +65,16 @@ namespace SimpleCalc
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
-            catch (DivideByZeroException) {
+            catch (DivideByZeroException)
+            {
                 MessageBox.Show(
                     "You cannot divide by zero.",
                     "Input Error",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
-                    }
-            catch(Exception ex){
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show(
                     "Error message: " + ex.Message,
                     "Input Error",
@@ -89,6 +91,16 @@ namespace SimpleCalc
         private void btnExit_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void SimpleCalc2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

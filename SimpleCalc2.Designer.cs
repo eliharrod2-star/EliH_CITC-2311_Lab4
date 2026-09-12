@@ -43,7 +43,7 @@
             // Operand1
             // 
             Operand1.AutoSize = true;
-            Operand1.Location = new Point(327, 111);
+            Operand1.Location = new Point(52, 49);
             Operand1.Name = "Operand1";
             Operand1.Size = new Size(78, 20);
             Operand1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // Operator
             // 
             Operator.AutoSize = true;
-            Operator.Location = new Point(327, 154);
+            Operator.Location = new Point(52, 98);
             Operator.Name = "Operator";
             Operator.Size = new Size(72, 20);
             Operator.TabIndex = 1;
@@ -61,7 +61,7 @@
             // Operand2
             // 
             Operand2.AutoSize = true;
-            Operand2.Location = new Point(327, 200);
+            Operand2.Location = new Point(52, 145);
             Operand2.Name = "Operand2";
             Operand2.Size = new Size(78, 20);
             Operand2.TabIndex = 2;
@@ -70,7 +70,7 @@
             // Result
             // 
             Result.AutoSize = true;
-            Result.Location = new Point(327, 236);
+            Result.Location = new Point(52, 188);
             Result.Name = "Result";
             Result.Size = new Size(52, 20);
             Result.TabIndex = 3;
@@ -78,35 +78,39 @@
             // 
             // txtOperand1
             // 
-            txtOperand1.Location = new Point(411, 104);
+            txtOperand1.Location = new Point(136, 49);
             txtOperand1.Name = "txtOperand1";
             txtOperand1.Size = new Size(125, 27);
             txtOperand1.TabIndex = 4;
+            txtOperand1.TextChanged += TextChanged;
             // 
             // txtOperator
             // 
-            txtOperator.Location = new Point(411, 147);
+            txtOperator.Location = new Point(136, 95);
             txtOperator.Name = "txtOperator";
-            txtOperator.Size = new Size(125, 27);
+            txtOperator.Size = new Size(40, 27);
             txtOperator.TabIndex = 5;
+            txtOperator.TextChanged += TextChanged;
             // 
             // txtOperand2
             // 
-            txtOperand2.Location = new Point(411, 193);
+            txtOperand2.Location = new Point(136, 142);
             txtOperand2.Name = "txtOperand2";
             txtOperand2.Size = new Size(125, 27);
             txtOperand2.TabIndex = 6;
+            txtOperand2.TextChanged += TextChanged;
             // 
             // txtResult
             // 
-            txtResult.Location = new Point(411, 236);
+            txtResult.Location = new Point(136, 181);
             txtResult.Name = "txtResult";
+            txtResult.ReadOnly = true;
             txtResult.Size = new Size(125, 27);
             txtResult.TabIndex = 7;
             // 
             // btnCalculate
             // 
-            btnCalculate.Location = new Point(327, 284);
+            btnCalculate.Location = new Point(52, 224);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(94, 29);
             btnCalculate.TabIndex = 8;
@@ -116,7 +120,7 @@
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(455, 284);
+            btnExit.Location = new Point(167, 224);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(94, 29);
             btnExit.TabIndex = 9;
@@ -124,13 +128,13 @@
             btnExit.UseVisualStyleBackColor = true;
             btnExit.Click += btnExit_Click_1;
             // 
-            // Form1
+            // SimpleCalc2
             // 
             AcceptButton = btnCalculate;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            CancelButton = btnCalculate;
-            ClientSize = new Size(1381, 492);
+            CancelButton = btnExit;
+            ClientSize = new Size(335, 297);
             Controls.Add(btnExit);
             Controls.Add(btnCalculate);
             Controls.Add(txtResult);
@@ -141,8 +145,9 @@
             Controls.Add(Operand2);
             Controls.Add(Operator);
             Controls.Add(Operand1);
-            Name = "Form1";
+            Name = "SimpleCalc2";
             Text = "Form1";
+            Load += SimpleCalc2_Load;
             ResumeLayout(false);
             PerformLayout();
         }
