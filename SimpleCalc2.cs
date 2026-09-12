@@ -98,9 +98,5 @@ namespace SimpleCalc
 
         }
 
-        private void TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
