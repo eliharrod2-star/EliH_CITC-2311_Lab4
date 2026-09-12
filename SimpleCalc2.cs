@@ -55,7 +55,6 @@ namespace SimpleCalc
                     "Input Error",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
-
             }
             catch (OverflowException)
             {
@@ -76,7 +75,9 @@ namespace SimpleCalc
             catch (Exception ex)
             {
                 MessageBox.Show(
-                    "Error message: " + ex.Message,
+                    "Error message: " + ex.Message +
+                    "\n\nError type: " + ex.GetType().Name +
+                    "\n\nStack trace: " + ex.StackTrace,
                     "Input Error",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
