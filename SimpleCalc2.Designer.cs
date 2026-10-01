@@ -82,7 +82,6 @@
             txtOperand1.Name = "txtOperand1";
             txtOperand1.Size = new Size(125, 27);
             txtOperand1.TabIndex = 4;
-            txtOperand1.TextChanged += TextChanged;
             // 
             // txtOperator
             // 
@@ -90,7 +89,6 @@
             txtOperator.Name = "txtOperator";
             txtOperator.Size = new Size(40, 27);
             txtOperator.TabIndex = 5;
-            txtOperator.TextChanged += TextChanged;
             // 
             // txtOperand2
             // 
@@ -98,7 +96,6 @@
             txtOperand2.Name = "txtOperand2";
             txtOperand2.Size = new Size(125, 27);
             txtOperand2.TabIndex = 6;
-            txtOperand2.TextChanged += TextChanged;
             // 
             // txtResult
             // 
